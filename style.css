@@ -40,6 +40,15 @@ body{
 .col-md-9{
     width: 75%;
 }
+.col-md-12{
+    width: 100%;
+}
+.col-md-8{
+    width: 66.66%;
+}
+.col-md-4{
+    width: 33.33%;
+}
 .header{
     height: 100px;
     background-color: rgba(255, 255, 255, 0.75);
@@ -201,7 +210,7 @@ li:hover .navigation{
     clear: both;
 }
 .content-top-link {
-    margin: 0px 0px 20px -25px;
+    margin: 0px 0px 20px 11px;
 }
 .top-link-menu > li > a{
     float: left;
@@ -225,36 +234,60 @@ li:hover .navigation{
 }
 .content-top-h1 {
     font-size: 48px;
-    margin: 23px 0px 50px -25px;
+    margin: 23px 0px 50px 11px;
     font-weight: bold;
     line-height: 0.83;
     text-align: left;
     color: #ffffff;
 }
-.content-top-sort {
+h2{
+    font-size: 30px;
+    padding-bottom:10px;
 }
-.content-device {
+
+.content-top-sort::after {
+    content:"";
+    display: block;
+    clear: both;
+}
+.content-top-sort{
+    margin: 23px 0px 68px 25px;
+}
+.content-top-h1::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+    
+.product {
+    background-color: rgb(44 113 184 / 66%);
     width: 270px;
     height: 652px;
-    margin: 0 0 0 -10px;
+    margin: 0 0 30px 10px;
     border: solid 1px #ffffff;
-    
 }
-.device {
-    background-color: #2c71b8;
-    opacity: 0.8;
-   
-   
-}
-.image {
+
+
+.product-image {
     text-align: center;
     width: 269px;
     height: 179px;
     border: solid 1px #ffffff;
-    background-color: rgba(255, 255, 255, 0.75);
-    background-image: url("img/icon (17).png");
-    background-repeat: no-repeat;
-    background-position: center center;
+    background-color: rgba(255, 255, 255, 0.65);
+    position: relative;
+} 
+.image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+
+}
+.product-icon{
+    position: absolute;
+    top: 10px;
+    left: 228px;
 }
 
 .icon-frame {
@@ -262,38 +295,59 @@ li:hover .navigation{
     height: 30px;
     padding: 5px;
     border: solid 1px #2c71b8;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.25);
+    background-image: url("img/icon (8).png");
+    background-repeat: no-repeat;
+    background-position: center center;
 }
+.icon-frame:hover{
+    background-color: #2c71b8;
+    background-image: url("img/icon (6).png");
+  
+}
+
 .icon-heart {
     width: 30px;
     height: 30px;
     padding: 5px;
+    margin-top: 10px;
     border: solid 1px #2c71b8;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.25);
+    background-image: url("img/icon (5).png");
+    background-repeat: no-repeat;
+    background-position: center center;
 }
-.device-text {
-    margin: 15px 15px 30px 15px;
+.icon-heart:hover{
+    background-color: #2c71b8;
+    background-image: url("img/icon (7).png");
+    
+}
+.product-body{
+    margin: 15px 35px 30px 15px;
+    color: white;
     font-size: 21px;
-    font-weight: 100;
-    line-height: 35px;
-    text-align: left;
-    color: #ffffff;
+    font-weight: 100 ;
 }
-.device-text > p {
-    padding-bottom:10px;
+.product-title {
+    font-size: 25px;
+    padding-top: 10px;
+}
+.product-description {
+    
+    padding-top: 10px;
+}
+.product-type {
+    padding-top: 10px;
 }
 
-.device-text > h2{
-    font-size: 30px;
-    padding-bottom:10px;
+.product-screen-size {
+    padding-top: 10px;
 }
-.lorem{
-    line-height: 25px;
+.product-ram {
+    padding-top: 10px;
 }
-.bold {
-    text-transform: uppercase;
-    font-size: 21px;
-    font-weight: bold;
+.product-price {
+    padding-top: 15px;
 }
 .price {
     font-size: 48px;
@@ -306,27 +360,36 @@ li:hover .navigation{
 .penny {
     font-size: 26px;
     position: absolute;
-    top: -12px;
-    left: 158px;
+    top: -10px;
+    left: 150px;
 }
-.device-button {
-    padding-bottom: 10px;
+.bold {
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: bold;
 }
-.button-cart {
+.device-button > button {
+    margin-top: 15px;
+   
+}
+.button {
+   font-weight: 100;
     width: 210px;
     height: 50px;
     display: block;
     margin: 0 auto;
-    padding: 17px 33px 18px;
     border: solid 1px #ffffff;
     background-color: #2c71b8;
+   
   }
-.button-details {
-    width: 210px;
-    height: 50px;
-    display: block;
-    margin: 0 auto;
-    padding: 17px 33px 18px;
-    border: solid 1px #ffffff;
-    background-color: #2c71b8;
+
+.button-text{
+    font-size: 21px;
+    line-height: 1.9;
+    text-align: center;
+    color: #ffffff;
+}
+
+.cart{
+    margin-left: 10px;
 }
