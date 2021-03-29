@@ -1,7 +1,28 @@
+body{
+    font-size: 42px;
+    background-color: burlywood;
 
+}
+
+.portfolio{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .pet-project {
+    text-decoration: none;
+    margin-right: 100px;
+    
     
 }
 .john {
+    text-decoration: none;
+   
 }
