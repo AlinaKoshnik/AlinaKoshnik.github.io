@@ -1,4 +1,5 @@
 import React from "react"
+import ProductList from "../Main/Products/ProductList"
 
 const Main = () => {
     return (
@@ -41,52 +42,7 @@ const Main = () => {
                         </div>
                     </div>
                 </section>
-                <section className="feature-works">
-                    <div className="feature-works-container container">
-                        <div className="feature-works-title title-posts">Featured works</div>
-                        <div className="works">
-                            <article className="works-item">
-                                <a href="" className="works-image ibg">
-                                    <img src="./img/Rectangle 30.png" alt="work #1" />
-                                </a>
-                                <div className="works-body">
-                                    <a href="" className="works-title">Designing Dashboards</a>
-                                    <div className="works-info">
-                                        <div className="works-year">2020</div>
-                                        <div className="works-category">Dashboard</div>
-                                    </div>
-                                    <div className="works-text text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
-                                </div>
-                            </article>
-                            <article className="works-item">
-                                <a href="" className="works-image ibg">
-                                    <img src="./img/Rectangle 32.png" alt="work #1" />
-                                </a>
-                                <div className="works-body">
-                                    <a href="" className="works-title">Vibrant Portraits of 2020</a>
-                                    <div className="works-info">
-                                        <div className="works-year">2020</div>
-                                        <div className="works-category">Illustration</div>
-                                    </div>
-                                    <div className="works-text text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
-
-                                </div>
-                            </article>
-                            <article className="works-item">
-                                <a href="" className="works-image ibg">
-                                    <img src="./img/Rectangle 34.png" alt="work #1" /></a>
-                                <div className="works-body">
-                                    <a href="" className="works-title">36 Days of Malayalam type</a>
-                                    <div className="works-info">
-                                        <div className="works-year">2020</div>
-                                        <div className="works-category">Typography</div>
-                                    </div>
-                                    <div className="works-text text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </section>
+                <ProductList/>
             </main>
     )
 }

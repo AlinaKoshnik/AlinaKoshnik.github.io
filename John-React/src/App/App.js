@@ -1,6 +1,7 @@
 import React from "react"
 import "../common/reset.css"
-import "../common/style.css"
+import "../common/style.scss"
+
 import Header from "./Header/Header"
 import Main from "./Main/Main"
 import Footer from "./Footer/Footer"
