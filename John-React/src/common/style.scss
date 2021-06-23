@@ -311,10 +311,10 @@ body{
         display: none;
     }
 }
-.title-posts{
+.title-posts {
     font-size: 22px;
     @media (max-width:$md3+px){
-        text-align: center;
+    
         font-size: 18px;
     }
 }
@@ -345,6 +345,7 @@ body{
     font-size: 26px;
     font-weight: 700;
     line-height: 38/26 * 100%;
+    cursor: pointer;
     @media (max-width:$md2+px){
         &:hover{
             color: #FF6464;
@@ -448,11 +449,19 @@ body{
     @media (max-width:$md3+px){
         font-size: 24px;
     }
+    
+    @media (min-width: $md2+px) {
+        &:hover {
+            color: #FF6464;
+        }
+    }
 }
 .works-info {
     display: flex;
     align-items: center;
     margin: 0 0 15px 0;
+
+    
 }
 .works-year {
     background: #142850;

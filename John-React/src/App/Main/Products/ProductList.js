@@ -9,7 +9,6 @@ const ProductList = () => {
             <section className="feature-works">
                     <div className="feature-works-container container">
                         <div className="feature-works-title title-posts">Featured works
-                        
                         {
                             products.map(({
                                 id,
@@ -17,10 +16,11 @@ const ProductList = () => {
                                 title,
                                 years,
                                 category,
-                                text
+                                text,
                             }) => (
-                                <ProductListItem
+                                <ProductListItem 
                                 id={id}
+                                key={id}
                                 image={image}
                                 title={title}
                                 years={years}

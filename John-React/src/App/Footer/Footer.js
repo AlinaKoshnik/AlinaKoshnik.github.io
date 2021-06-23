@@ -2,23 +2,23 @@ import React from "react"
 
 const Footer = () => {
     return (
-        <footer class="footer">
-        <div class="footer-content container">
-           <div class="footer-social social">
-               <a href="" class="social-item ">
-                   <img  class="_icon-fb" src="icon/fb.svg" alt=""/>
+        <footer className="footer">
+        <div className="footer-content container">
+           <div className="footer-social social">
+               <a href="" className="social-item ">
+                   <img  className="_icon-fb" src="/icon/fb.svg" alt=""/>
                </a>
-               <a href="" class="social-item ">
-                   <img class="_icon-insta" src="icon/insta.svg" alt=""/>
+               <a href="" className="social-item ">
+                   <img className="_icon-insta" src="/icon/insta.svg" alt=""/>
                </a>
-               <a href="" class="social-item ">
-                   <img class="_icon-Group" src="icon/Group.svg" alt=""/>
+               <a href="" className="social-item ">
+                   <img className="_icon-Group" src="/icon/Group.svg" alt=""/>
                </a>
-               <a href="" class="social-item ">
-                   <img class="_icon-Linkedin" src="icon/Linkedin.svg" alt=""/>
+               <a href="" className="social-item ">
+                   <img className="_icon-Linkedin" src="/icon/Linkedin.svg" alt=""/>
                </a>
            </div> 
-           <div class="footer-copy">Copyright ©2020 All rights reserved </div>
+           <div className="footer-copy">Copyright ©2020 All rights reserved </div>
         </div>
     </footer>
     )

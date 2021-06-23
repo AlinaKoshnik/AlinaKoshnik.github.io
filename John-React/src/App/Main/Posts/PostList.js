@@ -1,4 +1,6 @@
 import React from "react"
+import posts from "./posts"
+import PostListItem from "./PostListItem"
 
 const PostList = () =>{
     return(
@@ -8,7 +10,23 @@ const PostList = () =>{
                             <a href="" className="recent-posts-viewall">View all</a>
                         </div>
                         <div className="recent-posts-items">
-                           <PostListItem/>
+                        {
+                            posts.map(({
+                                id,
+                                title,
+                                text,
+                                info
+                            }) => (
+                           <PostListItem 
+                                key={id}
+                                id={id}
+                                title={title}
+                                text={text}
+                                info={info}
+                           />
+                            ))
+                        }
+
                         </div>
                     </div>
     )
